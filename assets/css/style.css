@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --bg-blue: #3aade6;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.special-title h2 {
+  font-size: 2.5rem;
+}
+.special-title h2::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background-color: var(--bg-blue);
+}
+.pagination a {
+  font-size: 1.5rem;
+  display: block;
+  padding: 0 1.1rem;
+}
+.pagination a:hover {
+  background-color: var(--bg-blue);
+  color: white;
+}
+
+.line-right {
+  border-right: 5px solid var(--bg-blue);
+  font-size: 2.2rem;
+  margin-right: 2.1rem;
+  padding: 0 10px 0 0;
+}
+/* loading */
+#loading {
+  background: #228EEE url(../images/load3.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+/* loading */
+
+/* Navbar */
+.navbar .navbar-brand img {
+  height: 70px;
+}
+.navbar-exlapse-lg {
+  text-align: left;
+}
+.navbar .navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+.navbar .fa-bars {
+  color: var(--bg-blue);
+  font-size: 30px;
+}
+.navbar .nav-link {
+  color: var(--bg-blue);
+  font-size: 20px;
+}
+/* Navbar */
+
+/* Header */
+.header .header-bg {
+  background-image: url(../images/header-side.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header-bg h1 {
+  margin-top: 100px;
+  font-size: 3rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .header img {
+    width: 80%;
+  }
+  .header .header-bg {
+    background: unset;
+  }
+  .header-bg h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .header-bg h1 {
+    font-size: 2.5rem;
+  }
+}
+/* Header */
+
+/* who we */
+.who-we img {
+  width: 80%;
+}
+.who-we p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+/* who we */
+@media (max-width: 1200px) {
+  .who-we p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .who-we img {
+    width: 90%;
+  }
+  .who-we p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we {
+    text-align: center;
+  }
+  .who-we p {
+    margin-top: 30px;
+    font-size: 1.3rem;
+  }
+}
+/* who we */
+
+/* services */
+.services .services-bg {
+  background-image: url(../images/we-offer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 50px;
+}
+
+.services .services-card {
+  background-color: white;
+  border: 1px solid #dbdfe1;
+  border-radius: 20px;
+  padding: 30px 20px 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.services .services-card img {
+  width: 50%;
+  margin: auto;
+}
+
+.services h5 {
+  color: var(--bg-blue);
+  margin: 20px 0 12px;
+}
+
+.services .owl-nav {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.services .owl-next span,
+.services .owl-prev span {
+  font-size: 2.5rem;
+  margin: 0 10px;
+}
+/* services */
+
+/* work */
+.work .work-bg {
+  background: url(../images/bg30-Ar1web.gif);
+  padding: 50px 0;
+  margin-top: 70px;
+}
+.work .work-details {
+  background-color: white;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0rem 0.5rem 0.8rem 0.5rem rgb(0 0 0 / 20%);
+}
+
+.work .work-img {
+  width: 100%;
+}
+.work .work-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+.work .work-title {
+  text-align: center;
+  padding: 25px 0;
+}
+.work .work-btn button {
+  background-color: #233142;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .work .work-details {
+    width: 100%;
+  }
+}
+/* work */
+
+/* microsoft */
+.microsoft .microsoft-bg {
+  background-image: url(../images/articles.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.microsoft .microsoft-details {
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0rem 0.5rem 0.8rem 0.5rem rgb(0 0 0 / 20%);
+  overflow: hidden;
+  background-color: white;
+}
+.microsoft .microsoft-img img {
+  width: 100%;
+}
+.microsoft .microsoft-title {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.microsoft .microsoft-title p {
+  padding: 0 20px;
+}
+.microsoft .microsoft-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.microsoft .microsoft-info button {
+  background-color: #233142;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 17px;
+}
+.microsoft .microsoft-btn button {
+  background-color: #233142;
+  color: white;
+  padding: 10px 65px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .microsoft .microsoft-details {
+    width: 100%;
+  }
+}
+
+/* microsoft */
+
+/* customers */
+.customers .bg-customer {
+  background-image: url(../images//our-client-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 80px 0;
+}
+.customers .curstomers-img {
+  width: 60%;
+}
+.customers .curstomers-img img {
+  width: 100%;
+}
+
+.customers .owl-nav {
+  margin-top: 2rem;
+  text-align: center;
+}
+.customers .owl-next span,
+.customers .owl-prev span {
+  font-size: 2.5rem;
+  margin: 0 10px;
+}
+
+@media (max-width: 992px) {
+  .customers .curstomers-img {
+    width: 80%;
+  }
+}
+/* customers */
+
+/* footer */
+footer {
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+footer .footer-img {
+  padding: 6rem 4rem 4rem 0;
+}
+footer .footer-img img {
+  height: 17rem;
+}
+footer .footer-content img {
+  height: 60px;
+}
+footer .footer-content h5 {
+  color: white;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+footer .footer-icons a {
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  margin: 0 1.1rem;
+}
+
+@media (max-width: 500px) {
+  footer .footer-img {
+    padding: 6rem 1rem 4rem 0;
+  }
+
+  footer .footer-left {
+    margin-bottom: 2rem;
+  }
+}
+/* footer */
+
+/* ِApp One */
+.app-one .app-img {
+  width: 40%;
+}
+.app-one .app-img img {
+  width: 100%;
+}
+.app-one .app-details h2 {
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .app-one .app-img {
+    width: 70%;
+  }
+}
+/* ِApp One */
+
+/* project details*/
+.project-details .bg-details {
+  background-image: url(../images/details-bg.png);
+  background-size: cover;
+  padding: 60px 45px;
+}
+.project-details .bg-details p {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+  .project-details .bg-details {
+    padding: 10px 0;
+  }
+}
+/* project details*/
+
+/* slider-img */
+.slider-img .offer-arrows a {
+  font-size: 18px;
+  padding: 3px;
+  margin: 5px;
+  color: white;
+}
+
+.offer-arrows .arrow-oneslider-right,
+.offer-arrows .arrow-oneslider-left {
+  background-color: #000;
+}
+
+.slider-img .card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-img .card-carousel .my-card {
+  position: relative;
+  z-index: 1;
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 1s;
+}
+
+.slider-img .card-carousel .my-card.active {
+  z-index: 3;
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.slider-img .card-carousel .my-card.prev,
+.slider-img .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev,
+.card-carousel .my-card.next {
+  z-index: 2;
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+/* slider-img */
+
+/* read-article */
+.read-article {
+  background-image: url(../images/bg30-Ar1web.gif);
+  padding: 20px 0 50px;
+}
+.read-article h2 {
+  font-size: 1.5rem;
+}
+.read-article .read-center {
+  width: 60%;
+  box-shadow: 0rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2);
+  border: 1px solid #dbdfe1;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 20px 0;
+}
+.read-article .read-center img {
+  width: 100%;
+}
+.read-article .read-img img {
+  width: 50%;
+}
+.read-article .read-title {
+  padding: 30px 15px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 992px) {
+  .read-article .read-center {
+    width: 100%;
+  }
+}
+
+/* read-article */
